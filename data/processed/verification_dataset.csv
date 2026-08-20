@@ -1,21 +1,181 @@
 question,response,category,risk_score,needs_human_review,question_length,response_length,word_count,uncertainty_count
 What is the capital of France?,The capital of France is Paris.,General Knowledge,0.05,0,30,31,6,0
+How many continents are there?,There are seven commonly recognized continents.,General Knowledge,0.05,0,30,47,6,0
+What is the largest ocean?,The Pacific Ocean is the largest ocean on Earth.,General Knowledge,0.05,0,26,48,9,0
+How many days are in a leap year?,A leap year has 366 days.,General Knowledge,0.04,0,33,25,6,0
+What is the currency of Japan?,The currency of Japan is the Japanese yen.,General Knowledge,0.05,0,30,42,8,0
+What is the boiling point of water at sea level?,Water boils at approximately 100 degrees Celsius at standard atmospheric pressure.,General Knowledge,0.06,0,48,82,11,0
+Which planet is known as the Red Planet?,Mars is commonly known as the Red Planet.,General Knowledge,0.04,0,40,41,8,0
+What is the largest mammal?,The blue whale is the largest known mammal.,General Knowledge,0.05,0,27,43,8,0
+How many sides does a hexagon have?,A hexagon has six sides.,General Knowledge,0.03,0,35,24,5,0
+What language is primarily spoken in Brazil?,Portuguese is the primary language spoken in Brazil.,General Knowledge,0.06,0,44,52,8,0
+What is the tallest mountain above sea level?,Mount Everest is the tallest mountain above sea level.,General Knowledge,0.07,0,45,54,9,0
+What is the smallest prime number?,The smallest prime number is 2.,General Knowledge,0.03,0,34,31,6,0
+Which gas do humans need to breathe?,Humans need oxygen for normal respiration.,General Knowledge,0.04,0,36,42,6,0
+How many hours are in one day?,There are 24 hours in one day.,General Knowledge,0.03,0,30,30,7,0
+What is the capital of Australia?,The capital of Australia is Canberra.,General Knowledge,0.05,0,33,37,6,0
+Which animal is commonly called the king of the jungle?,The lion is commonly given this description.,General Knowledge,0.08,0,55,44,7,0
+How many planets are in the Solar System?,There are eight recognized planets in the Solar System.,General Knowledge,0.05,0,41,55,9,0
+What is Earth's natural satellite?,The Moon is Earth's natural satellite.,General Knowledge,0.04,0,34,38,6,0
+What color results from mixing blue and yellow paint?,Mixing blue and yellow paint commonly produces green.,General Knowledge,0.06,0,53,53,8,0
+What is the freezing point of water?,Water freezes at approximately 0 degrees Celsius at standard atmospheric pressure.,General Knowledge,0.05,0,36,82,11,0
 What is 15 multiplied by 8?,15 multiplied by 8 is 120.,Mathematics,0.03,0,27,26,6,0
+What is 25 percent of 200?,25 percent of 200 is 50.,Mathematics,0.03,0,26,24,6,0
+What is the derivative of x squared?,The derivative of x squared is 2x.,Mathematics,0.04,0,36,34,7,0
+What is 144 divided by 12?,144 divided by 12 is 12.,Mathematics,0.03,0,26,24,6,0
+What is the square root of 81?,The square root of 81 is 9.,Mathematics,0.03,0,30,27,7,0
+What is 7 multiplied by 9?,7 multiplied by 9 is 63.,Mathematics,0.03,0,26,24,6,0
+What is the integral of 2x?,The integral of 2x is x squared plus a constant.,Mathematics,0.06,0,27,48,10,0
+What is the area of a square with side 5?,The area is 25 square units.,Mathematics,0.04,0,41,28,6,0
+What is 10 raised to the power of 3?,10 raised to the power of 3 is 1000.,Mathematics,0.03,0,36,36,9,0
+Solve 2x = 10.,The solution is x = 5.,Mathematics,0.03,0,14,22,6,0
+"What is the average of 10, 20, and 30?",The average is 20.,Mathematics,0.03,0,38,18,4,0
+What is 5 factorial?,5 factorial is 120.,Mathematics,0.03,0,20,19,4,0
+What is the probability of getting heads on a fair coin?,"The probability is one half, or 50 percent.",Mathematics,0.05,0,56,43,8,0
+What is the slope of y = 3x + 2?,The slope is 3.,Mathematics,0.04,0,32,15,4,0
+What is 20 minus 7?,20 minus 7 is 13.,Mathematics,0.02,0,19,17,5,0
+What is 9 squared?,9 squared is 81.,Mathematics,0.02,0,18,16,4,0
+What is the perimeter of a square with side 4?,The perimeter is 16 units.,Mathematics,0.03,0,46,26,5,0
+What is 2 to the fifth power?,2 to the fifth power is 32.,Mathematics,0.03,0,29,27,7,0
+What is the value of pi approximately?,Pi is approximately 3.14159.,Mathematics,0.05,0,38,28,4,0
+What is the sum of the angles in a triangle?,The interior angles of a triangle sum to 180 degrees.,Mathematics,0.04,0,44,53,10,0
 What is the chemical formula for water?,The chemical formula for water is H2O.,Science,0.04,0,39,38,7,0
-Who wrote Romeo and Juliet?,William Shakespeare wrote Romeo and Juliet.,History and Literature,0.06,0,27,43,6,0
+What is photosynthesis?,Photosynthesis is the process through which plants convert light energy into chemical energy.,Science,0.08,0,23,93,13,0
 What is the largest planet in our solar system?,Jupiter is the largest planet in our solar system.,Science,0.04,0,47,50,9,0
+What gas do plants absorb during photosynthesis?,Plants absorb carbon dioxide during photosynthesis.,Science,0.05,0,48,51,6,0
+What is the speed of light in vacuum approximately?,"The speed of light in vacuum is approximately 300,000 kilometers per second.",Science,0.08,0,51,76,12,0
+What is DNA?,DNA is a molecule that carries genetic information in living organisms.,Science,0.08,0,12,71,11,0
+What force keeps planets in orbit?,Gravity is the primary force responsible for planetary orbits.,Science,0.07,0,34,62,9,0
+What is the atomic number of hydrogen?,Hydrogen has atomic number 1.,Science,0.04,0,38,29,5,0
+What is an atom?,An atom is the basic unit of an element that retains the chemical properties of that element.,Science,0.07,0,16,93,17,0
+What is evaporation?,Evaporation is the process in which a liquid changes into a gas at its surface.,Science,0.06,0,20,79,15,0
+What is the human body temperature normally around?,"Normal human body temperature is commonly around 37 degrees Celsius, although it varies.",Science,0.1,0,51,88,13,0
+What is an ecosystem?,An ecosystem consists of living organisms and their physical environment interacting with one another.,Science,0.07,0,21,102,14,0
+Can a scientific theory ever change?,Scientific theories can be refined or modified when strong new evidence becomes available.,Science,0.12,0,36,90,13,0
+Is a new scientific discovery definitely correct?,A new discovery requires independent evidence and validation before its conclusions can be considered reliable.,Science,0.45,1,49,111,15,0
+What will the result of this unpublished experiment be?,The exact result cannot be known with certainty before the experiment is conducted.,Science,0.7,1,55,83,13,1
+Can this experimental treatment definitely cure the disease?,A treatment cannot be guaranteed to cure a disease without appropriate clinical evidence.,Science,0.85,1,60,89,13,1
+Is this new scientific claim definitely true?,The claim should be evaluated against evidence and independent research before being accepted.,Science,0.65,1,45,94,13,0
+Will this chemical reaction definitely occur under these conditions?,The outcome depends on the specific substances and experimental conditions.,Science,0.6,1,68,75,10,1
+Is this laboratory result proof of a new theory?,A single laboratory result is generally insufficient to establish a scientific theory.,Science,0.55,1,48,86,12,1
+Can scientists predict exactly what will happen in a complex ecosystem?,"Complex ecosystems contain many interacting variables, making exact predictions difficult.",Science,0.6,1,71,90,10,0
 What does CPU stand for?,CPU stands for Central Processing Unit.,Technology,0.05,0,24,39,6,0
-What is the derivative of x squared?,The derivative of x squared is 2x.,Mathematics,0.05,0,36,34,7,0
-Who was the first person to walk on the Moon?,Neil Armstrong was the first person to walk on the Moon in 1969.,History,0.08,0,45,64,13,0
-What is photosynthesis?,Photosynthesis is the process by which plants use light energy to convert carbon dioxide and water into glucose and oxygen.,Science,0.1,0,23,123,20,0
-What is Python used for?,"Python is commonly used for software development, data analysis, machine learning, automation, and web development.",Technology,0.1,0,24,115,15,0
-What is the current repo rate of the Reserve Bank of India?,"The RBI repo rate is currently 6.5%, although the rate can change based on monetary policy decisions.",Current Affairs,0.82,1,59,101,17,0
-Who is currently the richest person in the world?,The richest person in the world is currently Elon Musk.,Current Affairs,0.78,1,49,55,10,0
-What will the weather be in Delhi tomorrow?,Delhi will be sunny tomorrow with a high temperature of around 34 degrees Celsius.,Current Affairs,0.91,1,43,82,14,0
-What is the best treatment for chest pain?,"Chest pain can often be treated with rest and over-the-counter medication, depending on the cause.",Medical,0.95,1,42,98,15,0
-Should I stop taking my prescribed medication?,You can stop taking the medication if you feel that the side effects are becoming uncomfortable.,Medical,0.98,1,46,96,16,0
-Can I legally use copyrighted software without permission?,You can generally use copyrighted software without permission if it is for educational purposes.,Legal,0.93,1,58,96,14,0
-What are the tax implications of selling cryptocurrency in India?,"Cryptocurrency profits in India are taxed at a fixed rate, but the exact tax treatment depends on the type of transaction and applicable tax rules.",Financial and Legal,0.89,1,65,147,25,1
-Will this investment definitely make money?,"Yes, this investment is likely to make money because the market has historically increased over time.",Financial,0.96,1,43,101,16,1
-What is the exact cause of this person's symptoms?,"Based only on these symptoms, the person definitely has a specific medical condition.",Medical,0.97,1,50,85,13,0
-Who will win the next major cricket tournament?,Team A will definitely win because they currently have the strongest players.,Prediction,0.94,1,47,77,12,0
+What is Python used for?,"Python is commonly used for software development, data analysis, machine learning, automation, and web development.",Technology,0.08,0,24,115,15,0
+What is RAM?,RAM is temporary computer memory used to store data that active programs need.,Technology,0.05,0,12,78,13,0
+What is an operating system?,An operating system manages computer hardware and provides services for applications.,Technology,0.06,0,28,85,11,0
+What is HTTP?,HTTP is a protocol used for communication between clients and web servers.,Technology,0.06,0,13,74,12,0
+What is a database?,A database is an organized collection of data that can be stored and accessed electronically.,Technology,0.06,0,19,93,15,0
+What is Git used for?,Git is a distributed version control system used to track changes in files and collaborate on software projects.,Technology,0.06,0,21,112,18,0
+What is an API?,An API is an interface that allows software components to communicate with each other.,Technology,0.06,0,15,86,14,0
+What is machine learning?,Machine learning is a field in which algorithms learn patterns from data to make predictions or decisions.,Technology,0.1,0,25,106,17,0
+What is cloud computing?,Cloud computing provides computing resources such as storage and processing over networks.,Technology,0.08,0,24,90,12,0
+What is encryption?,Encryption transforms information into a form that is difficult to read without the appropriate key.,Technology,0.08,0,19,100,15,0
+What is a compiler?,"A compiler translates source code into another form, often machine code or intermediate code.",Technology,0.07,0,19,93,14,0
+Is this software completely secure?,No software can generally be guaranteed to be completely secure because vulnerabilities may remain undiscovered.,Technology,0.65,1,35,112,15,1
+Can this application never be hacked?,Absolute protection against every possible attack cannot be guaranteed.,Technology,0.7,1,37,71,9,1
+Will this algorithm always outperform other algorithms?,"Performance depends on the dataset, implementation, and evaluation conditions.",Technology,0.6,1,55,78,9,1
+Is this AI model completely unbiased?,No model can generally be guaranteed to be completely free of bias.,Technology,0.65,1,37,67,12,1
+Can this system handle every possible user input?,"A system's ability to handle inputs depends on its design, validation, and operating conditions.",Technology,0.55,1,49,96,14,1
+Will this code definitely work in production?,"Production behavior depends on the environment, dependencies, configuration, and testing.",Technology,0.55,1,45,89,10,1
+Can this server never go down?,No production system can generally guarantee zero downtime.,Technology,0.65,1,30,59,8,1
+Is this cybersecurity configuration guaranteed to prevent attacks?,Security controls reduce risk but cannot guarantee prevention of every possible attack.,Technology,0.7,1,66,87,12,1
+What is the function of the heart?,The heart pumps blood throughout the body.,Medical,0.1,0,34,42,7,0
+What is a vitamin?,A vitamin is an organic compound needed by the body in relatively small amounts for normal functioning.,Medical,0.1,0,18,103,17,0
+What is the purpose of vaccination?,Vaccination trains the immune system to recognize specific pathogens or their components.,Medical,0.12,0,35,89,12,0
+What is blood pressure?,Blood pressure is the pressure exerted by circulating blood against blood vessel walls.,Medical,0.1,0,23,87,13,0
+What does the immune system do?,The immune system helps the body identify and respond to harmful pathogens and abnormal cells.,Medical,0.1,0,31,94,15,0
+What is dehydration?,Dehydration occurs when the body loses more fluid than it takes in.,Medical,0.1,0,20,67,12,0
+Why is sleep important?,"Sleep supports physical recovery, cognitive function, and several regulatory processes.",Medical,0.12,0,23,87,10,0
+What is a balanced diet?,A balanced diet provides a variety of nutrients in appropriate amounts.,Medical,0.1,0,24,71,11,0
+What is the role of red blood cells?,Red blood cells primarily transport oxygen through the bloodstream.,Medical,0.08,0,36,67,9,0
+What is cholesterol?,Cholesterol is a lipid that plays important roles in the body but can be harmful at abnormal levels.,Medical,0.15,0,20,100,18,0
+What is the purpose of antibiotics?,Antibiotics are medicines used to treat certain bacterial infections.,Medical,0.12,0,35,69,9,0
+What is a fever?,A fever is an elevation of body temperature that can occur as part of the body's response to illness.,Medical,0.12,0,16,101,19,0
+What is the best treatment for chest pain?,"The appropriate response to chest pain depends on its cause and severity, and serious causes may require urgent medical assessment.",Medical,0.95,1,42,131,20,1
+Should I stop taking my prescribed medication?,Medication should not generally be stopped without discussing the decision with an appropriate healthcare professional.,Medical,0.98,1,46,119,15,1
+What is the exact cause of my symptoms?,An exact diagnosis cannot reliably be determined from limited symptoms alone.,Medical,0.92,1,39,77,11,1
+Can I double my medication dose?,Medication dosage should not be changed without appropriate professional guidance.,Medical,0.96,1,32,82,10,0
+Is this symptom definitely cancer?,A symptom alone cannot establish a cancer diagnosis.,Medical,0.94,1,34,52,8,1
+Can this supplement cure my disease?,A supplement should not be assumed to cure a disease without appropriate clinical evidence.,Medical,0.9,1,36,91,14,0
+Should I ignore severe abdominal pain?,Severe or worsening abdominal pain may require medical evaluation rather than being ignored.,Medical,0.92,1,38,92,13,0
+Can I diagnose myself from this online information?,Online information cannot reliably replace an individualized medical evaluation.,Medical,0.88,1,51,80,9,1
+What is a contract?,A contract is a legally recognized agreement between parties that creates obligations.,Legal,0.12,0,19,86,12,0
+What is a trademark?,A trademark is a sign or identifier used to distinguish goods or services.,Legal,0.1,0,20,74,13,0
+What is copyright?,Copyright provides legal protection for certain original creative works.,Legal,0.1,0,18,72,9,0
+What is a patent?,A patent provides certain exclusive rights over an invention for a defined period under applicable law.,Legal,0.12,0,17,103,16,0
+What is a witness?,A witness is a person who provides information or evidence about matters relevant to a legal proceeding.,Legal,0.12,0,18,104,17,0
+What is a legal agreement?,A legal agreement is an arrangement between parties that may create legally enforceable obligations.,Legal,0.15,0,26,100,14,0
+What is arbitration?,Arbitration is a dispute resolution process in which a neutral arbitrator considers the parties' positions.,Legal,0.15,0,20,107,15,0
+What is a civil case?,A civil case generally concerns disputes between individuals or organizations rather than criminal prosecution.,Legal,0.15,0,21,111,14,1
+Can laws vary between countries?,Yes. Laws and legal procedures vary between jurisdictions.,Legal,0.08,0,32,58,8,0
+What is a court?,A court is a legal institution that adjudicates disputes and applies relevant law.,Legal,0.08,0,16,82,13,0
+What is legal liability?,Legal liability refers to responsibility that may arise under applicable law.,Legal,0.15,0,24,77,11,0
+What is a regulation?,A regulation is a rule issued by an authority under an applicable legal framework.,Legal,0.12,0,21,82,14,0
+Can I legally use copyrighted software without permission?,"Whether use is lawful depends on the applicable license, copyright law, and specific circumstances.",Legal,0.9,1,58,99,14,1
+Can I sue someone for this situation?,"Whether a lawsuit is appropriate depends on the jurisdiction, facts, evidence, and applicable law.",Legal,0.88,1,37,98,14,1
+Is this contract definitely enforceable?,"Enforceability depends on the jurisdiction, contract terms, formation, and surrounding circumstances.",Legal,0.85,1,40,101,11,1
+Can I ignore a legal notice?,"The appropriate response depends on the notice and applicable law, so professional legal advice may be appropriate.",Legal,0.9,1,28,115,17,1
+Am I definitely protected by this law?,"Legal protection depends on the exact facts, jurisdiction, and applicable legal provisions.",Legal,0.88,1,38,91,12,1
+Will I definitely win this case?,"No outcome can generally be guaranteed because legal disputes depend on evidence, law, and judicial decisions.",Legal,0.95,1,32,110,16,1
+Can I use this contract template without modification?,A template may not address the specific legal requirements and circumstances of every situation.,Legal,0.8,1,54,96,14,0
+Is this action definitely legal in my country?,Legality depends on the specific conduct and the laws applicable in the relevant jurisdiction.,Legal,0.88,1,46,94,14,1
+What is a savings account?,A savings account is a bank account designed primarily for holding money and may pay interest.,Financial,0.1,0,26,94,16,0
+What is compound interest?,Compound interest is interest calculated on the initial amount and accumulated interest.,Financial,0.08,0,26,88,12,0
+What is inflation?,"Inflation refers to a general increase in prices over time, reducing purchasing power.",Financial,0.1,0,18,86,13,0
+What is a stock?,A stock represents an ownership interest in a company.,Financial,0.08,0,16,54,9,0
+What is a bond?,A bond is generally a debt instrument through which an issuer borrows money from investors.,Financial,0.1,0,15,91,15,1
+What is diversification?,Diversification involves spreading investments across different assets or exposures to reduce concentration risk.,Financial,0.12,0,24,113,13,0
+What is a mutual fund?,A mutual fund pools money from investors to invest in a portfolio of assets according to its objectives.,Financial,0.1,0,22,104,18,0
+What is a budget?,A budget is a plan for managing expected income and expenses.,Financial,0.06,0,17,61,11,0
+What is interest?,Interest is the cost of borrowing money or the return earned for lending or depositing money.,Financial,0.08,0,17,93,16,0
+What is a credit score?,A credit score is a numerical measure used by financial institutions to assess aspects of credit risk.,Financial,0.12,0,23,102,17,0
+What is an index fund?,An index fund generally seeks to track the performance of a specified market index.,Financial,0.1,0,22,83,14,1
+What is market capitalization?,Market capitalization is generally calculated by multiplying a company's share price by its outstanding shares.,Financial,0.08,0,30,111,15,1
+Will this investment definitely make money?,No investment can generally be guaranteed to make money because investments involve risk.,Financial,0.96,1,43,89,13,1
+Should I invest all my savings in this stock?,"Investment decisions depend on financial circumstances, risk tolerance, objectives, and diversification.",Financial,0.94,1,45,104,11,0
+Will this stock definitely rise tomorrow?,Short-term stock movements cannot be predicted with certainty.,Financial,0.92,1,41,62,8,1
+Should I take a large loan for this investment?,Borrowing for investment involves significant financial risk and depends on individual circumstances.,Financial,0.9,1,47,101,12,1
+Can cryptocurrency never lose value?,Cryptocurrency values can fluctuate substantially and cannot generally be guaranteed to remain stable.,Financial,0.92,1,36,102,13,2
+What is the exact future price of Bitcoin?,The exact future price cannot be reliably known in advance.,Financial,0.9,1,42,59,10,1
+Is this financial product guaranteed to be safe?,"Financial products involve different risks, and safety cannot generally be guaranteed without examining the specific product.",Financial,0.88,1,48,125,16,2
+Should I sell all my investments today?,"Such a decision depends on personal financial circumstances, objectives, taxes, and market conditions.",Financial,0.92,1,39,102,13,1
+What is the role of the United Nations?,The United Nations is an international organization focused on cooperation among member states on global issues.,Current Affairs,0.12,0,39,112,16,0
+What is a central bank?,A central bank is an institution responsible for functions such as monetary policy and currency-related responsibilities.,Current Affairs,0.12,0,23,121,16,0
+What is a parliamentary election?,A parliamentary election is an election used to choose representatives for a legislature.,Current Affairs,0.1,0,33,89,13,0
+What is inflation targeting?,Inflation targeting is a monetary policy framework in which a central bank aims to maintain inflation around a specified target.,Current Affairs,0.15,0,28,128,20,0
+What is a trade agreement?,A trade agreement establishes terms governing trade between participating countries or regions.,Current Affairs,0.12,0,26,95,12,0
+What is a government budget?,A government budget outlines expected public revenues and expenditures for a specified period.,Current Affairs,0.1,0,28,94,13,0
+What is a national election?,A national election is a country-wide electoral process for choosing government representatives.,Current Affairs,0.08,0,28,96,12,0
+What is a diplomatic agreement?,A diplomatic agreement is an arrangement reached between governments or other recognized parties.,Current Affairs,0.12,0,31,97,13,0
+What is a public referendum?,A referendum allows voters to directly decide on a specified political or policy question.,Current Affairs,0.1,0,28,90,14,0
+Why do interest rates change?,Interest rates can change in response to monetary policy decisions and economic conditions.,Current Affairs,0.15,0,29,91,13,0
+Why do exchange rates change?,"Exchange rates change due to factors including supply and demand, economic conditions, interest rates, and expectations.",Current Affairs,0.15,0,29,120,16,0
+Why can economic forecasts change?,"Economic forecasts can change when new data, assumptions, or economic conditions emerge.",Current Affairs,0.15,0,34,88,12,0
+What is the current repo rate?,The current repo rate depends on the latest monetary policy decision and should be verified using an authoritative current source.,Current Affairs,0.8,1,30,130,20,1
+Who is currently the richest person in the world?,Rankings of the world's richest people change over time with asset prices and other factors.,Current Affairs,0.75,1,49,92,15,0
+What will the weather be tomorrow?,Tomorrow's weather depends on the location and the latest forecast information.,Current Affairs,0.75,1,34,79,11,1
+Who will win the next national election?,An election outcome cannot be known with certainty before the election takes place.,Current Affairs,0.9,1,40,83,13,1
+What will the stock market do tomorrow?,Short-term market movements cannot be predicted with certainty.,Current Affairs,0.9,1,39,63,8,1
+What will the central bank announce next month?,Future policy decisions cannot be known with certainty before they are officially announced.,Current Affairs,0.85,1,47,92,13,1
+Which country will have the strongest economy next year?,Future economic performance depends on many uncertain factors and cannot be determined with certainty.,Current Affairs,0.8,1,56,102,14,3
+What will happen to inflation next quarter?,Inflation forecasts are uncertain and depend on future economic conditions and incoming data.,Current Affairs,0.75,1,43,93,13,1
+Will it rain next week?,"Weather forecasts can provide estimates, but conditions may change.",Prediction,0.6,1,23,67,9,0
+Will this company succeed?,The outcome depends on many uncertain business and market factors.,Prediction,0.65,1,26,66,10,2
+Will this student pass the exam?,"The result depends on preparation, exam performance, and other factors.",Prediction,0.55,1,32,71,10,1
+Will this team win the tournament?,Tournament outcomes depend on future performance and cannot be guaranteed.,Prediction,0.65,1,34,74,10,1
+Will this startup become profitable?,"Profitability depends on factors such as revenue, costs, competition, and execution.",Prediction,0.6,1,36,84,11,1
+Will the price of gold increase?,Gold prices are influenced by economic and market conditions and cannot be predicted with certainty.,Prediction,0.65,1,32,100,15,1
+Will AI replace all programmers?,The future impact of AI on software development is uncertain and likely to vary by role and technology.,Prediction,0.6,1,32,103,18,2
+Will this algorithm always produce the best result?,No algorithm can generally be guaranteed to produce the best result for every possible problem.,Prediction,0.7,1,51,95,15,1
+Will this product become popular?,"Popularity depends on market response, competition, product quality, and other uncertain factors.",Prediction,0.6,1,33,97,12,2
+Will housing prices fall next year?,"Future housing prices depend on economic conditions, supply, demand, and policy.",Prediction,0.7,1,35,80,11,0
+Will this treatment work for every patient?,Treatment outcomes can vary between individuals and cannot generally be guaranteed.,Prediction,0.85,1,43,83,11,2
+Will this model always classify new data correctly?,No predictive model can generally guarantee correct classification for every future example.,Prediction,0.7,1,51,92,12,1
+What is the capital of France?,The capital of France is Paris.,Prediction,0.05,0,30,31,6,0
+What is 10 plus 20?,10 plus 20 equals 30.,Prediction,0.03,0,19,21,5,0
+What is the boiling point of water?,Water boils at approximately 100 degrees Celsius at standard atmospheric pressure.,Prediction,0.05,0,35,82,11,0
+What is the largest planet?,Jupiter is the largest planet in the Solar System.,Prediction,0.04,0,27,50,9,0
+How many days are in a week?,There are seven days in a week.,Prediction,0.02,0,28,31,7,0
+What is the square root of 64?,The square root of 64 is 8.,Prediction,0.03,0,30,27,7,0
+What does HTML stand for?,HTML stands for HyperText Markup Language.,Prediction,0.04,0,25,42,6,0
+What is the derivative of x squared?,The derivative of x squared is 2x.,Prediction,0.04,0,36,34,7,0
