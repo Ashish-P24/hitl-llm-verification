@@ -32,7 +32,7 @@ from src.monitoring.drift_detector import DriftDetector
 # Page configuration
 st.set_page_config(
     page_title="HITL LLM Verification Framework",
-    page_icon="🛡️",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -100,12 +100,12 @@ with st.sidebar:
     )
     
     st.divider()
-    st.subheader("🤖 LLM Backend")
+    st.subheader("LLM Backend")
     api_key = os.getenv("GEMINI_API_KEY")
     if api_key and api_key != "YOUR_GEMINI_API_KEY" and api_key.strip():
-        st.success("✅ Gemini API Active")
+        st.success("Gemini API Active")
     else:
-        st.info("ℹ️ Local Simulator Active (No Gemini API Key)")
+        st.info("Local Simulator Active (No Gemini API Key)")
     
     st.divider()
     st.subheader("🗄️ Feedback Database")
@@ -113,7 +113,7 @@ with st.sidebar:
     st.write(f"**Total Reviews:** {stats['total_reviews']}")
     st.write(f"**Approval Rate:** {stats['approval_rate'] * 100:.1f}%")
     
-    if st.button("🌱 Seed Sample Feedback"):
+    if st.button("Seed Sample Feedback"):
         seed_sample_feedback()
         st.success("Sample reviews added!")
         st.rerun()
@@ -121,7 +121,7 @@ with st.sidebar:
 # ---------------------------------------------------------
 # MAIN TABS
 # ---------------------------------------------------------
-st.title("🛡️ Human-in-the-Loop Adaptive Verification Framework")
+st.title("Human-in-the-Loop Adaptive Verification Framework")
 st.write(
     "Intelligently evaluates the risk of Large Language Model responses and routes "
     "potentially risky responses to human reviewers to ensure safety and factual correctness."
@@ -130,9 +130,9 @@ st.write(
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🔍 Verification Playground",
     "✍️ Human Review Station",
-    "🔄 Adaptive Retraining",
-    "📊 Monitoring & Data Drift",
-    "🏆 Model Comparison"
+    "Adaptive Retraining",
+    "Monitoring & Data Drift",
+    "Model Comparison"
 ])
 
 # ---------------------------------------------------------
@@ -177,7 +177,7 @@ with tab1:
             ["General Knowledge", "Medical", "Financial", "Legal", "Science", "Technology", "Current Affairs"]
         )
 
-        verify_button = st.button("🚀 Generate & Verify Response", type="primary", use_container_width=True)
+        verify_button = st.button("Generate & Verify Response", type="primary", use_container_width=True)
 
     with col2:
         st.subheader("2. Verification Result")
@@ -307,7 +307,7 @@ with tab2:
         custom_comment = st.text_input("Reviewer Notes / Commentary:", placeholder="Additional notes regarding this response...")
         combined_comment = f"{', '.join(comment_preset)}. {custom_comment}".strip(" .")
 
-        if st.button("💾 Save Review to Feedback Database", type="primary", use_container_width=True):
+        if st.button("Save Review to Feedback Database", type="primary", use_container_width=True):
             if not review_q.strip() or not review_r.strip():
                 st.warning("Question and response cannot be empty.")
             else:
@@ -328,7 +328,7 @@ with tab2:
 # TAB 3: ADAPTIVE RETRAINING & MODEL MANAGEMENT
 # ---------------------------------------------------------
 with tab3:
-    st.header("🔄 Adaptive Learning & Model Retraining Pipeline")
+    st.header("Adaptive Learning & Model Retraining Pipeline")
     st.write("Incorporate human reviewer decisions to iteratively retrain, benchmark, and deploy improved risk classifiers.")
 
     df_feedback = get_feedback_df()
@@ -383,17 +383,17 @@ with tab3:
             st.table(pd.DataFrame(comp_data))
 
             if res["meets_deployment_threshold"]:
-                st.success("✅ Candidate model meets quality and safety deployment thresholds.")
+                st.success("Candidate model meets quality and safety deployment thresholds.")
             else:
                 st.warning("⚠️ Candidate model does not meet minimum safety thresholds.")
 
             col_btn1, col_btn2 = st.columns(2)
             with col_btn1:
-                if st.button("🚀 Deploy Candidate to Production", use_container_width=True):
+                if st.button("Deploy Candidate to Production", use_container_width=True):
                     dep = deploy_candidate_model()
                     st.success(f"Model deployed to production at {dep['timestamp']}!")
             with col_btn2:
-                if st.button("⏮️ Rollback to Previous Model", use_container_width=True):
+                if st.button("⏮Rollback to Previous Model", use_container_width=True):
                     try:
                         rb = rollback_model()
                         st.info(f"Rolled back to previous backup at {rb['timestamp']}.")
@@ -406,7 +406,7 @@ with tab3:
 # TAB 4: MONITORING & DATA DRIFT DASHBOARD
 # ---------------------------------------------------------
 with tab4:
-    st.header("📊 System Health, Drift Detection & Operational Monitoring")
+    st.header("System Health, Drift Detection & Operational Monitoring")
     st.write("Track operational verification metrics and detect statistical data drift across incoming queries.")
 
     detector = DriftDetector()
@@ -430,7 +430,7 @@ with tab4:
         if drift_report["drift_detected"]:
             st.warning(f"⚠️ Data Drift Detected in {drift_report['drift_features_count']} feature(s)! Model retraining recommended.")
         else:
-            st.success("✅ No statistically significant feature drift detected.")
+            st.success("No statistically significant feature drift detected.")
 
         drift_rows = []
         for feat, d in drift_report["drift_results"].items():
@@ -449,7 +449,7 @@ with tab4:
 
     st.divider()
 
-    st.subheader("📜 Review Feedback History & Audit Log")
+    st.subheader("Review Feedback History & Audit Log")
     df_all_fb = get_feedback_df()
     
     if not df_all_fb.empty:
@@ -463,7 +463,7 @@ with tab4:
 
         csv_data = filtered_df.to_csv(index=False).encode('utf-8')
         st.download_button(
-            label="📥 Download Feedback Dataset (CSV)",
+            label="Download Feedback Dataset (CSV)",
             data=csv_data,
             file_name="hitl_feedback_audit.csv",
             mime="text/csv"
@@ -475,10 +475,10 @@ with tab4:
 # TAB 5: MODEL COMPARISON BENCHMARK
 # ---------------------------------------------------------
 with tab5:
-    st.header("🏆 Multi-Model Benchmark Comparison")
+    st.header("Multi-Model Benchmark Comparison")
     st.write("Compares 5 machine learning classifiers on the verification dataset using Accuracy, Precision, Recall, F1-Score, and ROC-AUC.")
 
-    if st.button("🏁 Run Multi-Model Benchmark", use_container_width=True):
+    if st.button("Run Multi-Model Benchmark", use_container_width=True):
         with st.spinner("Training and evaluating classifiers..."):
             comp_res = run_model_comparison()
             st.session_state["benchmark_res"] = comp_res
