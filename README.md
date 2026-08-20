@@ -59,39 +59,31 @@ The main objective is to develop a system that:
 
 ## 3. Current Project Status
 
-The current implementation is approximately **60–65% complete**.
+The current implementation is approximately **80–85% complete**.
 
 ### Completed
 
-- Project setup
-- GitHub repository
-- Gemini LLM integration
-- Synthetic verification dataset
-- Feature engineering
-- Exploratory Data Analysis
-- Random Forest risk classifier
-- Train/test evaluation
-- 5-fold cross-validation
-- Feature importance analysis
-- Trained model persistence
-- Feature extraction for new responses
-- Risk prediction service
-- Risk-based routing
-- Gemini → Risk Model → Routing integration
-- Basic end-to-end terminal demonstration
+- Project setup & architecture
+- Gemini LLM integration with offline simulation fallback
+- Synthetic verification dataset (180 samples across 9 categories)
+- Feature engineering (length, word count, uncertainty vocabulary)
+- Exploratory Data Analysis (`src/data/eda.py`)
+- Random Forest risk classifier (`src/models/risk_model.py`)
+- Multi-Model Benchmark Comparison (`src/models/model_comparison.py`)
+- SQLite Human Feedback Database (`src/data/database.py`)
+- Adaptive Learning & Model Retraining Pipeline (`src/models/retrain.py`)
+- Statistical Data Drift Detection (KS-Test) & Monitoring (`src/monitoring/drift_detector.py`)
+- Verification Router with dynamic thresholds (`src/verification/router.py`)
+- End-to-end verification service (`src/verification/verification_service.py`)
+- Interactive 5-tab Streamlit web application (`app/streamlit_app.py`)
+- Automated Pipeline Test Suite (`tests/test_pipeline.py`)
 
-### Remaining
+### Remaining for Final Milestone (15-20%)
 
-- Streamlit web interface
-- Human review interface
-- Human feedback storage
-- Feedback dataset
-- Adaptive learning/retraining pipeline
-- Monitoring dashboard
-- Data drift detection
-- More robust validation
-- Final end-to-end testing
-- Final documentation and presentation
+- Production containerization (Docker / Cloud Deployment)
+- Semantic embedding & RAG-based verification features
+- Real-user study and field data collection
+- Final project presentation slides and academic report
 
 ---
 
@@ -974,58 +966,105 @@ models/*.joblib
 
 ## 41. Quick Start
 
-```powershell
+### Setup & Installation
+
+```bash
+# Clone repository
 git clone <REPOSITORY_URL>
 cd hitl-llm-verification
+
+# Create & activate virtual environment
 python -m venv .venv
-.venv\Scripts\Activate.ps1
+source .venv/bin/activate  # macOS / Linux
+# .venv\Scripts\Activate.ps1 # Windows
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-Create `.env`:
+### Environment Configuration
+
+Create a `.env` file (optional; offline simulation works automatically if key is omitted):
 
 ```env
-GEMINI_API_KEY=YOUR_API_KEY
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-```powershell
-python src/data/generate_dataset.py
-python src/data/eda.py
-python src/models/risk_model.py
-python -c "from src.verification.feature_extractor import extract_features; print(extract_features('What is the capital of France?', 'The capital of France is Paris.'))"
-python -m src.verification.risk_service
-python -m src.verification.router
-python -m src.verification.verification_service
-```
+### Execution & Running Modules
+
+1. **Launch Streamlit Web UI (Recommended)**:
+   ```bash
+   streamlit run app/streamlit_app.py
+   ```
+
+2. **Train Baseline Risk Model**:
+   ```bash
+   python src/models/risk_model.py
+   ```
+
+3. **Run Multi-Model Benchmark (RF, LogReg, GBDT, SVM, Decision Tree)**:
+   ```bash
+   python src/models/model_comparison.py
+   ```
+
+4. **Initialize & Seed SQLite Feedback Database**:
+   ```bash
+   python src/data/database.py
+   ```
+
+5. **Run Adaptive Retraining Pipeline**:
+   ```bash
+   python src/models/retrain.py
+   ```
+
+6. **Run Statistical Data Drift Detector & Monitoring**:
+   ```bash
+   python src/monitoring/drift_detector.py
+   ```
+
+7. **Run End-to-End Terminal Verification Demo**:
+   ```bash
+   python src/verification/verification_service.py
+   ```
+
+8. **Run Automated Test Suite**:
+   ```bash
+   python -m unittest tests/test_pipeline.py
+   ```
 
 ---
 
 ## 42. Current Project Position
 
-The current system has successfully demonstrated:
+The framework now covers the complete end-to-end Human-in-the-Loop lifecycle:
 
 ```text
-GEMINI → LLM RESPONSE → FEATURE EXTRACTION → RANDOM FOREST
-→ RISK PROBABILITY → ROUTING LOGIC → AUTO_ACCEPT / HUMAN_REVIEW
+1. INFERENCE & ROUTING:
+   USER QUESTION → GEMINI / SIMULATOR → LLM RESPONSE
+   → FEATURE EXTRACTION → RANDOM FOREST RISK CLASSIFIER
+   → PROBABILITY EVALUATION → AUTO_ACCEPT (Low Risk) vs HUMAN_REVIEW (High Risk)
+
+2. HUMAN-IN-THE-LOOP FEEDBACK:
+   HUMAN REVIEW STATION → APPROVE / REJECT / EDIT (CORRECTION)
+   → SQLITE DATABASE STORAGE (data/feedback.db)
+
+3. ADAPTIVE RETRAINING & CONTINUOUS IMPROVEMENT:
+   COMBINED DATASET → CANDIDATE MODEL RETRAINING → 5-FOLD CV EVALUATION
+   → BENCHMARK AGAINST PRODUCTION → SAFE DEPLOYMENT & ROLLBACK
+
+4. OBSERVABILITY & DRIFT MONITORING:
+   2-SAMPLE KS DRIFT DETECTION → OPERATIONAL KPIS → CSV AUDIT EXPORT
 ```
-
-The next major milestone:
-
-```text
-HUMAN_REVIEW → HUMAN DECISION → FEEDBACK STORAGE → ADAPTIVE LEARNING
-```
-
-That component is essential to completing the Human-in-the-Loop requirement.
 
 ---
 
 ## 43. Project Goal
 
-The final system should provide an intelligent verification layer between an LLM and its users.
+The final system provides an intelligent, adaptive verification layer between an LLM and its users.
 
 ```text
 LLM → Risk Assessment → Intelligent Routing → Human Oversight When Necessary
 → Feedback → Continuous Improvement
 ```
 
-This architecture aims to balance automation, reliability, human oversight, cost efficiency, safety, and continuous learning.
+This architecture balances automation, reliability, human oversight, cost efficiency, safety, and continuous learning.

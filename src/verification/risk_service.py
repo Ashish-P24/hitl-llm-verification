@@ -1,44 +1,41 @@
 import os
+import sys
 import joblib
 import pandas as pd
 
-from src.verification.feature_extractor import extract_features
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
+from src.verification.feature_extractor import extract_features
 
 MODEL_PATH = "models/risk_model.joblib"
 
 
 class RiskService:
 
-    def __init__(self):
-        if not os.path.exists(MODEL_PATH):
+    def __init__(self, model_path: str = MODEL_PATH):
+        if not os.path.exists(model_path):
             raise FileNotFoundError(
-                f"Risk model not found: {MODEL_PATH}"
+                f"Risk model not found: {model_path}. Run 'python src/models/risk_model.py' to train it."
             )
 
-        saved_model = joblib.load(MODEL_PATH)
-
+        saved_model = joblib.load(model_path)
         self.model = saved_model["model"]
         self.features = saved_model["features"]
 
     def assess_risk(self, question: str, response: str) -> dict:
-
-        # Extract features from new response
         feature_values = extract_features(
             question,
             response
         )
 
-        # Convert features into DataFrame
         X = pd.DataFrame(
             [feature_values],
             columns=self.features
         )
 
-        # Predict human review requirement
         prediction = self.model.predict(X)[0]
-
-        # Get probability of requiring human review
         probability = self.model.predict_proba(X)[0][1]
 
         return {
@@ -46,8 +43,9 @@ class RiskService:
             "needs_human_review": bool(prediction),
             "features": feature_values
         }
-if __name__ == "__main__":
 
+
+if __name__ == "__main__":
     service = RiskService()
 
     result = service.assess_risk(

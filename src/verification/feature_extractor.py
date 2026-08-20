@@ -16,6 +16,8 @@ def extract_features(question: str, response: str) -> dict:
         "could",
         "uncertain",
         "depends",
+        "cannot",
+        "generally",
     ]
 
     uncertainty_count = sum(

@@ -21,6 +21,10 @@ logs/*.log
 # IDE
 .vscode/
 
+# Databases
+*.db
+data/*.db
+
 # OS
 .DS_Store
 Thumbs.db
